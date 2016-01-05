@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Canada, Eh?",
+  "version": "1.0.0",
+  "description": "eh eh eh?",
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["canada-eh.js"],
+    "run_at": "document_end"
+  }]
+}
