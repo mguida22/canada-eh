@@ -23,8 +23,8 @@ function walk(node) {
 }
 
 function handleText(textNode) {
-  // exit early 75% of the time and do nothing
-  if (Math.random() < 0.75) {
+  // exit early 90% of the time and do nothing
+  if (Math.random() < 0.90) {
     return;
   }
 
