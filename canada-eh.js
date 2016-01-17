@@ -1,4 +1,4 @@
-// pretty much straight from the source of panicsteve/cloud-to-butt
+// walk function pretty much straight from the source of panicsteve/cloud-to-butt
 walk(document.body);
 
 function walk(node) {
@@ -23,15 +23,20 @@ function walk(node) {
 }
 
 function handleText(textNode) {
-  // exit early 90% of the time and do nothing
-  if (Math.random() < 0.90) {
-    return;
-  }
+  var sentences = textNode.nodeValue.split(/(\. |\? )/g);
 
-  var v = textNode.nodeValue;
+  var result = '';
+  sentences.forEach(function(phrase) {
+    // exit early 95% of the time and change nothing
+    if (Math.random() > 0.95) {
+      if (phrase === '. ') {
+        phrase = ', eh. ';
+      } else if (phrase === '? ') {
+        phrase = ', eh? ';
+      }
+    }
+    result += phrase;
+  });
 
-  v = v.replace(/\. /g, ", eh. ");
-  v = v.replace(/\? /g, ", eh? ");
-
-  textNode.nodeValue = v;
+  textNode.nodeValue = result;
 }
