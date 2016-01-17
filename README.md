@@ -2,7 +2,7 @@
 
 Make things a little more (stereotypically) Canadian. :maple_leaf:
 
-[Add to chrome](https://chrome.google.com/webstore/detail/canada-eh/kffnckgilffngpffniaobbmeldmmgioh0)
+[Add to chrome](https://chrome.google.com/webstore/detail/canada-eh/kffnckgilffngpffniaobbmeldmmgioh)
 
 *Canada, eh* will subtly add an "eh" into your webpages on approximately 10% of sentences. Feel free to contribute any issues, PRs, etc.
 
