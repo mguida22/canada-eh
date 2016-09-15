@@ -23,7 +23,7 @@ function walk(node) {
 }
 
 function handleText(textNode) {
-  var sentences = textNode.nodeValue.split(/(\. |\? )/g);
+  var sentences = textNode.nodeValue.split(/((?<!\d)\. |\? )/g);
 
   var result = '';
   sentences.forEach(function(phrase) {
